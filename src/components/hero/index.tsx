@@ -19,21 +19,25 @@ import HeroImage from './image';
 
 import { FiArrowUpRight } from 'react-icons/fi';
 import { HiClipboardList } from 'react-icons/hi';
+import { FaDiscord, FaStackOverflow, FaGithub } from 'react-icons/fa';
 import EmbededLink from '../EmbedLink';
+import { IconType } from 'react-icons';
 
 const Hero = () => {
   const [openPopver, setOpenPopover] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  type LinkType = LinkTypes & { color?: string };
+  type LinkType = LinkTypes & { color?: string; icon: IconType };
   const links: LinkType[] = [
     {
       href: GITHUB_PROFILE,
       label: 'Github',
+      icon: FaGithub,
     },
     {
       href: STACKOVERFLOW_PROFILE,
       label: 'Stack Overflow',
       color: 'orange.400',
+      icon: FaStackOverflow,
     },
   ];
 
@@ -70,7 +74,7 @@ const Hero = () => {
         </Heading>
         <Text alignSelf='flex-start'>
           I&#39;m a full-stack engineer and a designer. I&#39;m fully self
-          tought, everything I know I learned on my own. I usually work with{' '}
+          tought. Everything I know, I learned on my own. I usually work with{' '}
           <EmbededLink href='https://reactjs.org/'>
             <strong>ReactJS</strong>
           </EmbededLink>
@@ -103,7 +107,7 @@ const Hero = () => {
           alignItems='center'
           spacing={3}
         >
-          {links.map(({ href, label, color }) => (
+          {links.map(({ href, label, color, icon }) => (
             <Button
               key={href}
               as={Link}
@@ -113,6 +117,7 @@ const Hero = () => {
               isExternal
               variant='ghost'
               rightIcon={<Icon as={FiArrowUpRight} />}
+              leftIcon={<Icon as={icon} />}
             >
               {label}
             </Button>
@@ -129,6 +134,7 @@ const Hero = () => {
                 color='discord'
                 ref={buttonRef}
                 variant='ghost'
+                leftIcon={<Icon as={FaDiscord} />}
                 rightIcon={<Icon as={HiClipboardList} />}
                 onClick={discordClick}
               >

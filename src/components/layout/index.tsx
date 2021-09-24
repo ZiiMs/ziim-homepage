@@ -13,7 +13,7 @@ const Layout = ({ children }: Props) => {
       display='flex'
       minH={{ base: 'auto', md: '100vh' }}
     >
-      <VStack flex={1} spacing={8} alignItems='stretch' w='full'>
+      <VStack flex={1} spacing={16} alignItems='stretch' w='full'>
         <Header />
         <Box flex={1}>{children}</Box>
         <Footer />

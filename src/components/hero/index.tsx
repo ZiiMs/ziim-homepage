@@ -39,7 +39,7 @@ const Hero = () => {
       <VStack w='full' alignItems='flex-start' spacing={3}>
         <Heading size='lg'>Hi, I’m Alexander Tedesco</Heading>
         <Text>
-          I’m a full-stack engineer and a designer. I am fully self tought,
+          I’m a full-stack engineer and a designer. I'm fully self tought,
           everything I know I learned on my own. I usually work with{' '}
           <EmbededLink href='https://reactjs.org/'>
             <strong>ReactJS</strong>
@@ -52,7 +52,7 @@ const Hero = () => {
           <EmbededLink href='https://chakra-ui.com/'>
             <strong>Chakra UI</strong>
           </EmbededLink>{' '}
-          for front end. I have work with other languages such as{' '}
+          for front end. I also enjoy working with other languages such as{' '}
           <EmbededLink href='https://www.oracle.com/java/'>
             <strong>Java</strong>
           </EmbededLink>
@@ -64,7 +64,7 @@ const Hero = () => {
           <EmbededLink href='https://dotnet.microsoft.com/languages/csharp'>
             <strong>C#</strong>
           </EmbededLink>
-          . Currently I only do this for a hobby. Though if you want any work
+          . Currently I only do this for a hobby, though if you want any work
           from me, feel free to contact me.
         </Text>
 

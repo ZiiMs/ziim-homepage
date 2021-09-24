@@ -12,6 +12,7 @@ const Layout = ({ children }: Props) => {
       maxW='container.md'
       display='flex'
       minH={{ base: 'auto', md: '100vh' }}
+      w='full'
     >
       <VStack flex={1} spacing={16} alignItems='stretch' w='full'>
         <Header />

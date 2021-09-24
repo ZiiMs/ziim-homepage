@@ -6,6 +6,9 @@ const theme = extendTheme({
     initialColorMode: 'dark',
     useSystemColorMode: false,
   },
+  colors: {
+    discord: '#738adb',
+  },
   components: {
     Heading: {
       baseStyle: (props: any) => ({

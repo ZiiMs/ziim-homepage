@@ -7,15 +7,23 @@ import {
   Link,
   Button,
   Icon,
+  PopoverTrigger,
+  Popover,
+  PopoverContent,
+  useColorModeValue,
+  PopoverBody,
 } from '@chakra-ui/react';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { GITHUB_PROFILE, STACKOVERFLOW_PROFILE } from 'src/constants';
 import HeroImage from './image';
 
 import { FiArrowUpRight } from 'react-icons/fi';
+import { HiClipboardList } from 'react-icons/hi';
 import EmbededLink from '../EmbedLink';
 
 const Hero = () => {
+  const [openPopver, setOpenPopover] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   type LinkType = LinkTypes & { color?: string };
   const links: LinkType[] = [
     {
@@ -28,6 +36,26 @@ const Hero = () => {
       color: 'orange.400',
     },
   ];
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setOpenPopover(false);
+    }, 2500);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [openPopver]);
+
+  const discordClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    setOpenPopover(true);
+    const discordId = 'ZiiM#8109';
+    if ('clipboard' in navigator) {
+      await navigator.clipboard.writeText(discordId);
+    } else {
+      document.execCommand('copy', true, discordId);
+    }
+  };
 
   return (
     <Stack
@@ -83,6 +111,33 @@ const Hero = () => {
               {label}
             </Button>
           ))}
+          <Popover
+            placement='end'
+            initialFocusRef={buttonRef}
+            size='sm'
+            preventOverflow={false}
+            isOpen={openPopver}
+          >
+            <PopoverTrigger>
+              <Button
+                color='discord'
+                ref={buttonRef}
+                variant='ghost'
+                rightIcon={<Icon as={HiClipboardList} />}
+                onClick={discordClick}
+              >
+                ZiiM#8109
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent
+              w='fit-content'
+              bgColor={useColorModeValue('discord', 'discord')}
+              ringColor='transparent'
+              color='white'
+            >
+              <PopoverBody>Copied</PopoverBody>
+            </PopoverContent>
+          </Popover>
         </Stack>
       </VStack>
       <HeroImage />

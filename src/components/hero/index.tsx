@@ -64,9 +64,11 @@ const Hero = () => {
       w='full'
       spacing={12}
     >
-      <VStack w='full' alignItems='flex-start' spacing={3}>
-        <Heading size='lg'>Hi, I’m Alexander Tedesco</Heading>
-        <Text>
+      <VStack w='full' spacing={3}>
+        <Heading size='lg' alignSelf='flex-start'>
+          Hi, I&#39;m Alexander Tedesco
+        </Heading>
+        <Text alignSelf='flex-start'>
           I&#39;m a full-stack engineer and a designer. I&#39;m fully self
           tought, everything I know I learned on my own. I usually work with{' '}
           <EmbededLink href='https://reactjs.org/'>
@@ -96,7 +98,11 @@ const Hero = () => {
           from me, feel free to contact me.
         </Text>
 
-        <Stack direction={{ base: 'column', md: 'row' }} spacing={3}>
+        <Stack
+          direction={{ base: 'column', md: 'row' }}
+          alignItems='center'
+          spacing={3}
+        >
           {links.map(({ href, label, color }) => (
             <Button
               key={href}

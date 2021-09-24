@@ -37,10 +37,6 @@ const middleGroup: LinkType[] = [
     href: STACKOVERFLOW_PROFILE,
     label: 'Stack Overflow',
   },
-  {
-    href: '/discord',
-    label: 'Discord',
-  },
 ];
 
 const rightSide: LinkType[] = [

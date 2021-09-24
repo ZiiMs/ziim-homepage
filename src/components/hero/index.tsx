@@ -71,6 +71,7 @@ const Hero = () => {
         <Stack direction={{ base: 'column', md: 'row' }} spacing={3}>
           {links.map(({ href, label, color }) => (
             <Button
+              key={href}
               as={Link}
               href={href}
               color={color}

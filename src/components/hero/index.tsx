@@ -13,6 +13,7 @@ import { GITHUB_PROFILE, STACKOVERFLOW_PROFILE } from 'src/constants';
 import HeroImage from './image';
 
 import { FiArrowUpRight } from 'react-icons/fi';
+import EmbededLink from '../EmbedLink';
 
 const Hero = () => {
   type LinkType = LinkTypes & { color?: string };
@@ -40,11 +41,31 @@ const Hero = () => {
         <Text>
           I’m a full-stack engineer and a designer. I am fully self tought,
           everything I know I learned on my own. I usually work with{' '}
-          <strong>ReactJS/NextJS</strong> and <strong>Chakra UI</strong> for
-          front end. I have work with other languages such as{' '}
-          <strong>Java</strong>, <strong>lua</strong> and a tiny bit of{' '}
-          <strong>C#</strong>. Currently I only do this for a hobby. Though if
-          you want any work from me, feel free to contact me.
+          <EmbededLink href='https://reactjs.org/'>
+            <strong>ReactJS</strong>
+          </EmbededLink>
+          /
+          <EmbededLink href='https://nextjs.org/'>
+            <strong>NextJS</strong>
+          </EmbededLink>{' '}
+          and{' '}
+          <EmbededLink href='https://chakra-ui.com/'>
+            <strong>Chakra UI</strong>
+          </EmbededLink>{' '}
+          for front end. I have work with other languages such as{' '}
+          <EmbededLink href='https://www.oracle.com/java/'>
+            <strong>Java</strong>
+          </EmbededLink>
+          ,{' '}
+          <EmbededLink href='https://www.lua.org/'>
+            <strong>lua</strong>
+          </EmbededLink>{' '}
+          and a tiny bit of{' '}
+          <EmbededLink href='https://dotnet.microsoft.com/languages/csharp'>
+            <strong>C#</strong>
+          </EmbededLink>
+          . Currently I only do this for a hobby. Though if you want any work
+          from me, feel free to contact me.
         </Text>
 
         <Stack direction={{ base: 'column', md: 'row' }} spacing={3}>

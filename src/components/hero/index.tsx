@@ -67,8 +67,8 @@ const Hero = () => {
       <VStack w='full' alignItems='flex-start' spacing={3}>
         <Heading size='lg'>Hi, I’m Alexander Tedesco</Heading>
         <Text>
-          I’m a full-stack engineer and a designer. I'm fully self tought,
-          everything I know I learned on my own. I usually work with{' '}
+          I`&#39;`m a full-stack engineer and a designer. I`&#39;`m fully self
+          tought, everything I know I learned on my own. I usually work with{' '}
           <EmbededLink href='https://reactjs.org/'>
             <strong>ReactJS</strong>
           </EmbededLink>

@@ -22,6 +22,7 @@ import { HiClipboardList } from 'react-icons/hi';
 import { FaDiscord, FaStackOverflow, FaGithub } from 'react-icons/fa';
 import EmbededLink from '../EmbedLink';
 import { IconType } from 'react-icons';
+import { GetStaticProps } from 'next';
 
 const Hero = () => {
   const [openPopver, setOpenPopover] = useState(false);

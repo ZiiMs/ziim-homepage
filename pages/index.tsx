@@ -3,10 +3,9 @@ import { VStack } from '@chakra-ui/react';
 import type { GetStaticProps } from 'next';
 import React from 'react';
 import Head from 'next/head';
-import Projects from '@/components/projects';
+import Projects from '@/components/favProjects';
 import { Project } from '@/types/project';
-import path from 'path';
-import { promises as fs } from 'fs';
+import { readFile } from '@/utils/readfile';
 
 type Props = {
   projects: Project[];
@@ -28,10 +27,9 @@ const Home = ({ projects }: Props) => {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const jsonPath = path.join(process.cwd(), 'data/projects.json');
-  const fileContent = await fs.readFile(jsonPath, 'utf8');
-  const jsonParse = JSON.parse(fileContent) as { projects: Project[] };
-  const projects = jsonParse.projects;
+  const { projects } = await readFile<{ projects: Project[] }>(
+    'data/favorite-projects.json'
+  );
 
   return {
     props: {

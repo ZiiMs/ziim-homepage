@@ -26,7 +26,7 @@ const Projects = ({ projects }: Props) => {
             finished.
           </Text>
         </VStack>
-        <VStack spacing={8} alignItems='flex-start'>
+        <VStack spacing={5} alignItems='flex-start'>
           {projects.map((project) => (
             <ProjectPost key={project.url} {...project} />
           ))}

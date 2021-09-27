@@ -5,84 +5,97 @@
       "description": "nextJSCrud is a simple todo app built using NodeJS, NextJS, Expres and MongoDB stack. Its a very simple project that I was using to re-learn/ touch up on my skills with full-stack development ",
       "url": "https://github.com/ZiiMs/nextJSCrud",
       "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
+      "image": "/assets/images/nextJsCrud.png"
     },
     {
       "title": "ZRP",
       "description": "ZRP is a fivem script. It is not fully complete, but has many advanced features and uses a custom made OOP system. Its built using LUA, Typescript and React. It has some nice custom features, but has an issue with its event system.",
       "url": "https://github.com/ZiiMs/ZRP",
       "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
+      "image": "/assets/images/zrp.jpg"
     },
     {
       "title": "FastDB",
       "description": "FastDB is a WIP MongoDB explorer and editor, built using electron-forge. My goal was to create a very simple, and easy to use and look at MongoDB editor.",
       "url": "https://github.com/ZiiMs/FastDB",
       "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
+      "image": "/assets/images/fastdb.png"
     },
     {
       "title": "ZiiMForge",
       "description": "ZiiMForge is a WIP CurseForge clone, builting using nextron. My goal was to recreate it with a little ibt of a different UI.",
       "url": "https://github.com/ZiiMs/ziimforge",
       "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
+      "image": "/assets/images/ziimforge.png"
     },
     {
-      "title": "nextJSCrud",
-      "description": "nextJSCrud is a simple todo app built using NodeJS, NextJS, Expres and MongoDB stack. Its a very simple project that I was using to re-learn/ touch up on my skills with full-stack development ",
+      "title": "ZiiM-Hud",
+      "description": "ZiiM-Hud is a mod for minecraft built for Fabric modloader. It adds a hud to your screen that allows you to track useful information right on your screen. One of the most challenging projects i've done.",
+      "url": "https://github.com/ZiiMs/ZiiM-Hud",
+      "date": "August 9, 2020",
+      "image": "/assets/images/ziimhud.png"
+    },
+    {
+      "title": "React FiveM Boilerplate",
+      "description": "React FiveM Boilerplate was a way to easily use React with FiveM. I combined three other similar projects from other creators into one. Allowing for a nice and simple way of using React.",
+      "url": "https://github.com/ZiiMs/react-fivem-boilerplate",
+      "date": "September 25, 2021",
+      "image": "/assets/images/zrp.png"
+    },
+    {
+      "title": "ChatChannel",
+      "description": "ChatChannel was a spigot plugin with the goal of being a simple channel based chat. You would be able to add channels, and set who has permissions to join said channel. Then a person can just join the channel and talk with only people in that channel.",
+      "url": "https://github.com/ZiiMs/ChatChannel",
+      "date": "September 26, 2020"
+    },
+    {
+      "title": "ZiiM Crates",
+      "description": "ZiiM Crates is a simple unboxing spigot plugin. Its very simple, it allows you to set the rewards and odds with a nice and simple UI.",
+      "url": "https://github.com/ZiiMs/ZRP",
+      "date": "September 22, 2020",
+      "image": "/assets/images/ziimcrates.gif"
+    },
+    {
+      "title": "Other Spigot",
+      "description": "Uncomplete Spigot is a collection of small spigot plugins I made. Most of them are rough around the edges. Most of these are what I used to learn Java.",
+      "url": "https://github.com/ZiiMs/UncompleteSpigot",
+      "date": "October 20, 2020",
+      "image": "/assets/images/spigot.png"
+    },
+    {
+      "title": "ZiiM-Queue",
+      "description": "ZiiM-Queue was a spigot plugin I released. Its goal was to be a queueing based system in spigot.",
+      "url": "https://github.com/ZiiMs/ZiiM-Queue",
+      "date": "September 20, 2020",
+      "image": "/assets/images/ziimqueue.png"
+    },
+    {
+      "title": "Cops & Robbers",
+      "description": "Cops & Robbers was an unfinished Cops & Robbers gamemode for FiveM. My goal was to make a simple gamemode using all the knowledge I got from TriumphRP. However I lost interest in it shortly after.",
       "url": "https://github.com/ZiiMs/nextJSCrud",
-      "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
+      "date": "March 30, 2020",
+      "image": "/assets/images/copsrobbers.jpg"
     },
     {
-      "title": "ZRP",
-      "description": "ZRP is a fivem script. It is not fully complete, but has many advanced features and uses a custom made OOP system. Its built using LUA, Typescript and React. It has some nice custom features, but has an issue with its event system.",
-      "url": "https://github.com/ZiiMs/ZRP",
-      "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
+      "title": "Triumph RP",
+      "description": "Triumph RP is the very first FiveM server I made. It never was finished but it was first time learning lua.",
+      "url": "https://github.com/ZiiMs/TriumphRP",
+      "date": "April 1, 2019",
+      "image": "/assets/images/trp.png"
     },
     {
-      "title": "FastDB",
-      "description": "FastDB is a WIP MongoDB explorer and editor, built using electron-forge. My goal was to create a very simple, and easy to use and look at MongoDB editor.",
-      "url": "https://github.com/ZiiMs/FastDB",
-      "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
+      "title": "SAMP DayZ",
+      "description": "SAMP Dayz or gtaDayz was a gamemode I made for SAMP. My goal was to recreate the dayz mod in SAMP, using PAWN.",
+      "url": "https://github.com/ZiiMs/gtaDayz",
+      "date": "June 21, 2017",
+      "image": "/assets/images/sampdayz.jpg"
     },
     {
-      "title": "ZiiMForge",
-      "description": "ZiiMForge is a WIP CurseForge clone, builting using nextron. My goal was to recreate it with a little ibt of a different UI.",
-      "url": "https://github.com/ZiiMs/ziimforge",
-      "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
-    },
-    {
-      "title": "nextJSCrud",
-      "description": "nextJSCrud is a simple todo app built using NodeJS, NextJS, Expres and MongoDB stack. Its a very simple project that I was using to re-learn/ touch up on my skills with full-stack development ",
-      "url": "https://github.com/ZiiMs/nextJSCrud",
-      "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
-    },
-    {
-      "title": "ZRP",
-      "description": "ZRP is a fivem script. It is not fully complete, but has many advanced features and uses a custom made OOP system. Its built using LUA, Typescript and React. It has some nice custom features, but has an issue with its event system.",
-      "url": "https://github.com/ZiiMs/ZRP",
-      "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
-    },
-    {
-      "title": "FastDB",
-      "description": "FastDB is a WIP MongoDB explorer and editor, built using electron-forge. My goal was to create a very simple, and easy to use and look at MongoDB editor.",
-      "url": "https://github.com/ZiiMs/FastDB",
-      "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
-    },
-    {
-      "title": "ZiiMForge",
-      "description": "ZiiMForge is a WIP CurseForge clone, builting using nextron. My goal was to recreate it with a little ibt of a different UI.",
-      "url": "https://github.com/ZiiMs/ziimforge",
-      "date": "September 25, 2021",
-      "url": "https://github.com/ZiiMs/ziimforge"
+      "title": "Elobuddy",
+      "description": "This is one of my very first scripts I ever made. It was bot script for League of Legends. I made it for a class in highschool.",
+      "url": "https://github.com/ZiiMs/EloBuddy",
+      "date": "September 30, 2015",
+      "image": "/assets/images/elobuddy.jpg"
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "bookmarks": [
+    {
+      "title": "First Bookmark",
+      "description": "nextJSCrud is a simple todo app built using NodeJS, NextJS, Expres and MongoDB stack. Its a very simple project that I was using to re-learn/ touch up on my skills with full-stack development ",
+      "url": "https://github.com/ZiiMs/nextJSCrud",
+      "tag": "Developer",
+      "image": "/assets/images/nextJsCrud.png"
+    },
+    {
+      "title": "Second Bookmark",
+      "description": "nextJSCrud is a simple todo app built using NodeJS, NextJS, Expres and MongoDB stack. Its a very simple project that I was using to re-learn/ touch up on my skills with full-stack development ",
+      "url": "https://github.com/ZiiMs/nextJSCrud",
+      "tag": "Design",
+      "image": "/assets/images/nextJsCrud.png"
+    },
+    {
+      "title": "Third Bookmark",
+      "description": "nextJSCrud is a simple todo app built using NodeJS, NextJS, Expres and MongoDB stack. Its a very simple project that I was using to re-learn/ touch up on my skills with full-stack development ",
+      "url": "https://github.com/ZiiMs/nextJSCrud",
+      "tag": "General",
+      "image": "/assets/images/nextJsCrud.png"
+    }
+  ]
+}

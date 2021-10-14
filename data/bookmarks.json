@@ -1,11 +1,11 @@
 {
   "bookmarks": [
     {
-      "title": "First Bookmark",
-      "description": "nextJSCrud is a simple todo app built using NodeJS, NextJS, Expres and MongoDB stack. Its a very simple project that I was using to re-learn/ touch up on my skills with full-stack development ",
-      "url": "https://github.com/ZiiMs/nextJSCrud",
+      "title": "Chakra UI",
+      "description": "Chakra UI is a frontend framework for react. 10/10 IMO best frontend framework.",
+      "url": "https://chakra-ui.com/",
       "tag": "Developer",
-      "image": "/assets/images/nextJsCrud.png"
+      "image": "/assets/images/chakra-ui.png"
     },
     {
       "title": "Second Bookmark",

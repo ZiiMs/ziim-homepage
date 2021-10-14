@@ -5,18 +5,22 @@ import { VStack, Text, Heading, HStack } from '@chakra-ui/layout';
 import { Tag, useColorModeValue } from '@chakra-ui/react';
 import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 type Props = {
   bookmarks: Bookmark[];
 };
 
 const Bookmarks = ({ bookmarks }: Props) => {
-  const [isSelected, setIsSelected] = useState(['General', 'Design']);
+  const [isSelected, setIsSelected] = useState([
+    'General',
+    'Design',
+    'Developer',
+  ]);
+  const [sortedBookmarks, setSortedBookmakrs] = useState(bookmarks);
   const GetColor = (type: string, tag: string, colormode: string) => {
     switch (type) {
       case 'bg': {
-        console.log(isSelected.includes('Design'));
         if (tag === 'General') {
           if (isSelected.includes('General')) {
             if (colormode === 'light') {
@@ -96,6 +100,22 @@ const Bookmarks = ({ bookmarks }: Props) => {
       }
     }
   };
+
+  useEffect(() => {
+    setSortedBookmakrs(
+      bookmarks.filter((ele) => {
+        if (isSelected.includes('General')) {
+          if (ele.tag == 'General') return ele;
+        }
+        if (isSelected.includes('Design')) {
+          if (ele.tag == 'Design') return ele;
+        }
+        if (isSelected.includes('Developer')) {
+          if (ele.tag == 'Developer') return ele;
+        }
+      })
+    );
+  }, [isSelected]);
 
   type Tag = {
     tag: string;
@@ -181,8 +201,8 @@ const Bookmarks = ({ bookmarks }: Props) => {
               </Tag>
             ))}
           </HStack>
-          {bookmarks.map((bookmark) => (
-            <BookmarkCard key={bookmark.url} {...bookmark} />
+          {sortedBookmarks.map((bookmark, i) => (
+            <BookmarkCard key={i} {...bookmark} />
           ))}
         </VStack>
       </VStack>

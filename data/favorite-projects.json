@@ -20,7 +20,7 @@
     },
     {
       "title": "ZiiMForge",
-      "description": "ZiiMForge is a WIP CurseForge clone, builting using nextron. My goal was to recreate it with a little ibt of a different UI.",
+      "description": "ZiiMForge is a WIP CurseForge clone, built using nextron. My goal was to recreate it with a little bit of a different UI.",
       "url": "https://github.com/ZiiMs/ziimforge",
       "image": "/assets/images/ziimforge.png"
     }

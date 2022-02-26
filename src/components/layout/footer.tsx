@@ -18,14 +18,14 @@ const leftSide: LinkType[] = [
     href: '/',
     label: 'Home',
   },
-  {
-    href: '/projects',
-    label: 'Projects',
-  },
-  {
-    href: '/bookmarks',
-    label: 'Bookmarks',
-  },
+  // {
+  //   href: '/projects',
+  //   label: 'Projects',
+  // },
+  // {
+  //   href: '/bookmarks',
+  //   label: 'Bookmarks',
+  // },
 ];
 
 const middleGroup: LinkType[] = [
@@ -40,14 +40,14 @@ const middleGroup: LinkType[] = [
 ];
 
 const rightSide: LinkType[] = [
-  {
-    href: '/software',
-    label: 'Software',
-  },
-  {
-    href: '/hardware',
-    label: 'Hardware',
-  },
+  // {
+  //   href: '/software',
+  //   label: 'Software',
+  // },
+  // {
+  //   href: '/hardware',
+  //   label: 'Hardware',
+  // },
 ];
 
 const Footer = () => {

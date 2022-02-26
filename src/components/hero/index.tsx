@@ -86,7 +86,12 @@ const Hero = () => {
           and{' '}
           <EmbededLink href='https://chakra-ui.com/'>
             <strong>Chakra UI</strong>
-          </EmbededLink>{' '}
+          </EmbededLink>
+          {' or '}
+          <EmbededLink href='https://mantine.dev/'>
+            <strong>Mantine</strong>
+          </EmbededLink>
+          {' '}
           for front end. I also enjoy working with other languages such as{' '}
           <EmbededLink href='https://www.oracle.com/java/'>
             <strong>Java</strong>

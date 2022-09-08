@@ -1,5 +1,4 @@
 import { extendTheme, theme as base } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools';
 
 const theme = extendTheme({
   config: {
@@ -9,18 +8,19 @@ const theme = extendTheme({
   colors: {
     discord: '#738adb',
   },
-  components: {
-    Heading: {
-      baseStyle: (props: any) => ({
-        color: mode('gray.700', 'white')(props),
-      }),
-    },
-    Text: {
-      baseStyle: (props: any) => ({
-        color: mode('gray.700', 'white')(props),
-      }),
+  semanticTokens: {
+    colors: {
+      text: {
+        default: 'gray.700',
+        _dark: 'white',
+      },
+      heading: {
+        default: 'gray.700',
+        _dark: 'white',
+      },
     },
   },
+
   fonts: {
     heading: `Poppins, ${base.fonts.heading}`,
     body: `Inter, ${base.fonts.body}`,
@@ -28,3 +28,4 @@ const theme = extendTheme({
 });
 
 export default theme;
+

@@ -1,28 +1,17 @@
 import { Link as LinkTypes } from '@/types/link';
 import {
-  Stack,
-  VStack,
-  Text,
-  Heading,
-  Link,
-  Button,
-  Icon,
-  PopoverTrigger,
-  Popover,
-  PopoverContent,
-  useColorModeValue,
-  PopoverBody,
+  Button, Heading, Icon, Link, Popover, PopoverBody, PopoverContent, PopoverTrigger, Stack, Text, useColorModeValue, VStack
 } from '@chakra-ui/react';
 import React, { useEffect, useRef, useState } from 'react';
 import { GITHUB_PROFILE, STACKOVERFLOW_PROFILE } from 'src/constants';
 import HeroImage from './image';
 
+import { GetStaticProps } from 'next';
+import { IconType } from 'react-icons';
+import { FaDiscord, FaGithub, FaStackOverflow } from 'react-icons/fa';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { HiClipboardList } from 'react-icons/hi';
-import { FaDiscord, FaStackOverflow, FaGithub } from 'react-icons/fa';
 import EmbededLink from '../EmbedLink';
-import { IconType } from 'react-icons';
-import { GetStaticProps } from 'next';
 
 const Hero = () => {
   const [openPopver, setOpenPopover] = useState(false);
@@ -88,8 +77,8 @@ const Hero = () => {
             <strong>Chakra UI</strong>
           </EmbededLink>
           {' or '}
-          <EmbededLink href='https://mantine.dev/'>
-            <strong>Mantine</strong>
+          <EmbededLink href='https://tailwindcss.com/'>
+            <strong>TailwindCSS</strong>
           </EmbededLink>
           {' '}
           for front end. I also enjoy working with other languages such as{' '}

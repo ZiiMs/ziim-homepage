@@ -1,28 +1,29 @@
 {
   "projects": [
     {
+      "title": "ZiiM's CRM",
+      "description": "This site is built using Next.Js, TRPC, NextAuth, Prisma, and Chakra-UI. My goal for the site was to build my own version of Trello and how I think it should be used. It has joinable groups for easy sharing of tasks and todos. SITE IS STILL *WIP*",
+      "url": "https://github.com/ZiiMs/ZiiMCRM",
+      "image": "/assets/images/zcrm.png"
+    },
+    {
+      "title": "Github Tasks",
+      "description": "It's a simple site built using Next.JS, NextAuth, TRPC, and TailwindCSS. Its goal is to create todos and tasks for specific GitHub repositories and share them with all repository members.",
+      "url": "https://github.com/ZiiMs/ghtasks",
+      "image": "/assets/images/ghtasks.png"
+    },
+    {
+      "title": "Zurl - Easy URL shortner",
+      "description": "Zurl is built using Next.Js, TRPC, TailwindCSS. It's a very simple URL shorter using VercelEdge to quickly route to the correct URL.",
+      "url": "https://github.com/ZiiMs/zurl",
+      "image": "/assets/images/zurl.png"
+    },
+    {
       "title": "nextJSCrud",
       "description": "nextJSCrud is a simple todo app built using NodeJS, NextJS, Expres and MongoDB stack. Its a very simple project that I was using to re-learn/ touch up on my skills with full-stack development ",
       "url": "https://github.com/ZiiMs/nextJSCrud",
       "image": "/assets/images/nextJsCrud.png"
-    },
-    {
-      "title": "ZRP",
-      "description": "ZRP is a fivem script. It is not fully complete, but has many advanced features and uses a custom made OOP system. Its built using LUA, Typescript and React. It has some nice custom features, but has an issue with its event system.",
-      "url": "https://github.com/ZiiMs/ZRP",
-      "image": "/assets/images/zrp.jpg"
-    },
-    {
-      "title": "FastDB",
-      "description": "FastDB is a WIP MongoDB explorer and editor, built using electron-forge. My goal was to create a very simple, and easy to use and look at MongoDB editor.",
-      "url": "https://github.com/ZiiMs/FastDB",
-      "image": "/assets/images/fastdb.png"
-    },
-    {
-      "title": "ZiiMForge",
-      "description": "ZiiMForge is a WIP CurseForge clone, built using nextron. My goal was to recreate it with a little bit of a different UI.",
-      "url": "https://github.com/ZiiMs/ziimforge",
-      "image": "/assets/images/ziimforge.png"
     }
   ]
 }
+

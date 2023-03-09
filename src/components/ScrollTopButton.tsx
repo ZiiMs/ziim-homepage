@@ -7,23 +7,27 @@ const ScrollToTop: React.FC = () => {
   useEffect(() => {
     const toggleVis = () => {
       if (window.scrollY > 200) {
-        console.log("Showing")
+        console.log('Showing');
         setShowScrollButton(true);
       } else {
         setShowScrollButton(false);
       }
     };
-    setFirstLoad(false);
-
+    setTimeout(() => {
+      setFirstLoad(false);
+    }, 150);
 
     window.addEventListener('scroll', toggleVis);
 
     return () => window.removeEventListener('scroll', toggleVis);
   }, []);
 
-
   return (
-    <div className={`fixed inset-x-0 mx-auto bottom-6 default:invisible w-fit h-fit items-center justify-center flex ${firstLoad ? 'invisible' : 'visible'} ${showScrollButton ? 'animate-enter' : 'animate-leave '}`}>
+    <div
+      className={`fixed inset-x-0 mx-auto bottom-6 w-fit h-fit items-center justify-center flex ${
+        firstLoad ? 'invisible' : 'visible'
+      } ${showScrollButton ? 'animate-enter' : 'animate-leave '}`}
+    >
       <button
         className='bg-zm-light-900 fill-pink-500 bg-clip-text flex  rounded-full'
         onClick={() => {

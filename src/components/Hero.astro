@@ -1,59 +1,57 @@
 ---
-import { Image,Picture } from '@astrojs/image/components';
-import ziim from '../images/ziim.jpg';
-import ziim2 from '../images/ziim2.png';
-import ziim3 from '../images/ziim3.png';
+import { Image } from "@astrojs/image/components";
+import ziim3 from "../images/ziim3.png";
 ---
 
 <div
-  class='w-full h-screen flex flex-col space-y- items-center justify-center bg-gradient-radial'
+  class="w-full h-screen flex flex-col space-y- items-center justify-center bg-gradient-radial"
 >
   <div
-    class='w-full h-full flex flex-col gap-4 p-0 items-center justify-center'
+    class="w-full h-full flex flex-col gap-4 p-0 items-center justify-center"
   >
     <Image
-      class={'rounded-full p-0'}
+      class={"rounded-full p-0"}
       src={ziim3}
-      alt={'ZiiM'}
+      alt={"ZiiM"}
       width={200}
       height={200}
     />
-    <div class='gap-2 p-2 flex flex-col items-center justify-center'>
-      <h1 class='text-2xl font-light text-zm-200 tracking-widest'>
+    <div class="gap-2 p-2 flex flex-col items-center justify-center">
+      <h1 class="text-2xl font-light text-zm-200 tracking-widest">
         SOFTWARE ENGINEER
       </h1>
-      <h2 class='text-4xl font-medium text-zm-light-100'>Alexander Tedesco</h2>
+      <h2 class="text-4xl font-medium text-zm-light-100">Alexander Tedesco</h2>
     </div>
-    <div class='flex items-center justify-center gap-2 p-2'>
+    <div class="flex items-center justify-center gap-2 p-2">
       <button
-      id="about"
-        class='px-2.5 py-2 rounded-full text-base font-extralight text-zm-100 hover:text-sky-900 hover:outline hover:outline-1 hover:outline-sky-900/50'
+        id="about"
+        class="nav px-2.5 py-2 rounded-full text-base font-extralight text-zm-100 hover:text-sky-900 hover:outline hover:outline-1 hover:outline-sky-900/50"
         >ABOUT</button
       >
       <button
-      id="experience"
-        class='px-2.5 py-2 rounded-full text-base font-extralight text-zm-100 hover:text-sky-900 hover:outline hover:outline-1 hover:outline-sky-900/50'
+        id="experience"
+        class="nav px-2.5 py-2 rounded-full text-base font-extralight text-zm-100 hover:text-sky-900 hover:outline hover:outline-1 hover:outline-sky-900/50"
         >EXPERIENCE</button
       >
       <button
-      id="skills"
-        class='px-2.5 py-2 rounded-full text-base font-extralight text-zm-100 hover:text-sky-900 hover:outline hover:outline-1 hover:outline-sky-900/50'
+        id="skills"
+        class="nav px-2.5 py-2 rounded-full text-base font-extralight text-zm-100 hover:text-sky-900 hover:outline hover:outline-1 hover:outline-sky-900/50"
         >SKILLS</button
       >
     </div>
   </div>
 </div>
 <script>
-  const buttons = document.querySelectorAll('button');
+  const buttons = document.querySelectorAll("button.nav");
   buttons.forEach((button) => {
-    button.addEventListener('click', () => {
+    button.addEventListener("click", () => {
       const foundSection = document.getElementById(`${button.id}-section`);
       console.log(foundSection, `${button.id}-section`);
       if (!foundSection) return;
 
       foundSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     });
   });

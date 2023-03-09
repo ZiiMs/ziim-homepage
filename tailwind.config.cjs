@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-radial':
-          'radial-gradient(29.84% 35.96% at 50% 50%, rgba(12, 74, 110, 0.2) 0%, rgba(24, 26, 31, 0.066) 100%)',
+          'radial-gradient(55% 36% at 50% 50%, rgba(12, 74, 110, 0.2) 0%, rgba(24, 26, 31, 0.066) 100%)',
       },
       colors: {
         zm: {

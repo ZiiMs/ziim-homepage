@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(29.84% 35.96% at 50% 50%, rgba(12, 74, 110, 0.2) 0%, rgba(24, 26, 31, 0.066) 100%)'
+        'gradient-radial':
+          'radial-gradient(29.84% 35.96% at 50% 50%, rgba(12, 74, 110, 0.2) 0%, rgba(24, 26, 31, 0.066) 100%)',
       },
       colors: {
         zm: {
@@ -35,6 +36,59 @@ module.exports = {
       fontFamily: {
         roboto: 'Roboto',
         inter: 'Inter',
+      },
+      keyframes: {
+        roundedHover: {
+          '0%': {
+            borderRadius: '9999px',
+          },
+          '50%': {
+            borderRadius: '24px',
+          },
+          '100%': {
+            borderRadius: '16px',
+          },
+        },
+        enter: {
+          from: {
+            opacity: 0,
+            transform: 'scale(0.5)',
+            transition: 'all 150ms',
+          },
+          to: {
+            opacity: 100,
+            transform: 'scale(1)',
+            transition: 'all 150ms',
+          },
+        },
+        leave: {
+          from: {
+            opacity: 100,
+            transform: 'scale(1)',
+            transition: 'all 150ms',
+          },
+          to: {
+            opacity: 0,
+            transform: 'scale(0.5)',
+            transition: 'all 150ms',
+          },
+        },
+        blurBackdrop: {
+          from: {
+            opacity: 0,
+            transition: 'all 150ms',
+          },
+          to: {
+            opacity: '20',
+            transition: 'all 150ms',
+          },
+        },
+      },
+      animation: {
+        modelBackdrop: 'blurBackdrop 150ms linear 1 forwards',
+        roundedOn: 'roundedHover 250ms linear 1 forwards',
+        enter: 'enter 150ms linear 1 forwards',
+        leave: 'leave 150ms linear 1 forwards',
       },
     },
   },

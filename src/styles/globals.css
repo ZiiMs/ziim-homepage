@@ -7,3 +7,10 @@
     @apply text-zm-light-100 bg-zm-900;
   }
 }
+
+@layer utilities {
+  .clipped {
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
+  }
+}

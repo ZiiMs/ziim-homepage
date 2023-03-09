@@ -2,15 +2,19 @@ import { useEffect, useState } from 'react';
 
 const ScrollToTop: React.FC = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [firstLoad, setFirstLoad] = useState(true);
 
   useEffect(() => {
     const toggleVis = () => {
       if (window.scrollY > 200) {
+        console.log("Showing")
         setShowScrollButton(true);
       } else {
         setShowScrollButton(false);
       }
     };
+    setFirstLoad(false);
+
 
     window.addEventListener('scroll', toggleVis);
 
@@ -19,7 +23,7 @@ const ScrollToTop: React.FC = () => {
 
 
   return (
-    <div className={`fixed animate-enter inset-x-0 mx-auto bottom-6  w-fit h-fit items-center justify-center flex ${showScrollButton ? 'animate-enter' : 'animate-leave'}`}>
+    <div className={`fixed inset-x-0 mx-auto bottom-6 default:invisible w-fit h-fit items-center justify-center flex ${firstLoad ? 'invisible' : 'visible'} ${showScrollButton ? 'animate-enter' : 'animate-leave '}`}>
       <button
         className='bg-zm-light-900 fill-pink-500 bg-clip-text flex  rounded-full'
         onClick={() => {

@@ -38,6 +38,13 @@ module.exports = {
         inter: 'Inter',
       },
       keyframes: {
+        caroseulTransition: {
+          '0%': {
+          },
+          '100%': {
+            transform: ' translateX(-500px)',
+          }
+        },
         roundedHover: {
           '0%': {
             borderRadius: '9999px',
@@ -89,6 +96,7 @@ module.exports = {
         roundedOn: 'roundedHover 250ms linear 1 forwards',
         enter: 'enter 150ms linear 1 forwards',
         leave: 'leave 150ms linear 1 forwards',
+        caro: 'caroseulTransition 500ms ease-in-out 1 forwards',
       },
     },
   },

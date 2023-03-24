@@ -1,7 +1,7 @@
 ---
 import About from "../components/About.astro";
-import Experience from "../components/Experience.astro";
 import Hero from "../components/Hero.astro";
+import Projects from "../components/Projects";
 import Skills from "../components/Skills.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -12,7 +12,7 @@ let count = 0;
   <body class="">
     <Hero />
     <About />
-    <Experience />
+    <Projects client:visible />
     <Skills />
   </body>
 </Layout>

@@ -21,6 +21,6 @@
     "title": "CUID-Generator",
     "body": "CUID-generator is a web application that generates unique, cryptographically-secure identifiers (CUIDs) that can be used as unique keys or IDs in a variety of applications. What sets CUID-generator apart is its modern and user-friendly interface, which makes it easy and intuitive to use.",
     "image": "https://i.imgur.com/gqzvuLr.png",
-    "url":"https://github.com/ZiiMs/Zimgur"
+    "url":"https://github.com/ZiiMs/cuid-generator"
   }
 ]

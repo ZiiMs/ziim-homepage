@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
       <div className="flex flex-col items-center  h-full">
         <h1
           id="experience-section"
-          className="text-2xl font-light pt-24 text-zm-200 tracking-widest"
+          className="text-3xl font-light pt-24 text-zm-200 tracking-widest"
         >
           PROJECTS
         </h1>

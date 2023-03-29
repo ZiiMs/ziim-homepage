@@ -39,6 +39,7 @@ const Projects: React.FC = () => {
             <div className="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0">
               {projects.map((_, i) => (
                 <button
+                  key={`${i}-tracker`}
                   type="button"
                   className={`mx-[3px] box-content h-[3px] w-[30px] ${
                     index === i ? "opacity-100" : "opacity-50"

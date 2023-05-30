@@ -1,9 +1,9 @@
 [
   {
-    "title": "Radiance",
-    "body": "Radiance is a chat platform that aims to recreate the experience of Discord. Radiance has a sleek and modern design that is both visually appealing and user-friendly, making it easy for users to navigate and communicate with others.",
+    "title": "Zapix",
+    "body": "Zapix is a chat platform that aims to recreate the experience of Discord. Zapix has a sleek and modern design that is both visually appealing and user-friendly, making it easy for users to navigate and communicate with others.",
     "image": "https://i.imgur.com/bViaL7W.png",
-    "url": "https://github.com/ZiiMs/Radiance"
+    "url": "https://github.com/ZiiMs/Zapix"
   },
   {
     "title": "Ziimgur",
@@ -15,12 +15,12 @@
     "title": "GHTasks",
     "body": "GHTasks is a task management platform that leverages the power of Github repositories to help users organize and manage their tasks. The platform is designed to be simple and intuitive, with a clean and modern interface that makes it easy to create, assign, and track tasks.",
     "image": "https://i.imgur.com/ZMdxe62.png",
-    "url":"https://github.com/ZiiMs/Zimgur"
+    "url": "https://github.com/ZiiMs/Zimgur"
   },
   {
     "title": "CUID-Generator",
     "body": "CUID-generator is a web application that generates unique, cryptographically-secure identifiers (CUIDs) that can be used as unique keys or IDs in a variety of applications. What sets CUID-generator apart is its modern and user-friendly interface, which makes it easy and intuitive to use.",
     "image": "https://i.imgur.com/gqzvuLr.png",
-    "url":"https://github.com/ZiiMs/cuid-generator"
+    "url": "https://github.com/ZiiMs/cuid-generator"
   }
 ]

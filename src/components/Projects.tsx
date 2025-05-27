@@ -41,9 +41,8 @@ const Projects: React.FC = () => {
                 <button
                   key={`${i}-tracker`}
                   type="button"
-                  className={`mx-[3px] box-content h-[3px] w-[30px] ${
-                    index === i ? "opacity-100" : "opacity-50"
-                  } flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px]  transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none`}
+                  className={`mx-[3px] box-content h-[3px] w-[30px] ${index === i ? "opacity-100" : "opacity-50"
+                    } flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px]  transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none`}
                   aria-label={`Slide ${i}`}
                 ></button>
               ))}
@@ -52,13 +51,12 @@ const Projects: React.FC = () => {
               {projects.map((data, i) => (
                 <div
                   key={i}
-                  className={`relative float-left flex h-full -mr-[100%] place-self-center self-center justify-center items-center ${
-                    i === index
+                  className={`relative float-left flex h-full -mr-[100%] place-self-center self-center justify-center items-center ${i === index
                       ? "left-0"
                       : i > index
-                      ? "left-full"
-                      : "-left-full"
-                  }  w-full transition-all duration-[600ms] ease-in-out motion-reduce:transition-none`}
+                        ? "left-full"
+                        : "-left-full"
+                    }  w-full transition-all duration-[600ms] ease-in-out motion-reduce:transition-none`}
                 >
                   <Card
                     title={data.title}
@@ -71,18 +69,18 @@ const Projects: React.FC = () => {
               ))}
             </div>
             <button
-              className="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              className="absolute top-0 bottom-0 right-full  z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
               type="button"
               onClick={handlePrevious}
             >
-              <span className="inline-block h-8 w-8">
+              <span className="inline-block ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="h-6 w-6"
+                  className="h-8 w-8"
                 >
                   <path
                     strokeLinecap="round"
@@ -96,18 +94,18 @@ const Projects: React.FC = () => {
               </span>
             </button>
             <button
-              className="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              className="absolute top-0 bottom-0 left-full z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
               type="button"
               onClick={handleNext}
             >
-              <span className="inline-block h-8 w-8">
+              <span className="inline-block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="h-6 w-6"
+                  className="h-8 w-8"
                 >
                   <path
                     strokeLinecap="round"

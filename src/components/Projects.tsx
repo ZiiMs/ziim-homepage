@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Data from "../data.json";
 import Card from "./Project/Card";
 
@@ -11,7 +11,7 @@ interface Data {
 
 const Projects: React.FC = () => {
   const [index, setIndex] = useState(0);
-  const [projects, setProjects] = useState(Data);
+  const [projects] = useState(Data);
   const length = projects.length;
 
   const handlePrevious = () => {

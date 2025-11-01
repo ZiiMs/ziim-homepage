@@ -5,6 +5,8 @@ import ReactCard from "./skills/reactCard.astro";
 import TailwindCard from "./skills/tailwindCard.astro";
 import TRPCCard from "./skills/trpcCard.astro";
 import TypescriptCard from "./skills/typescriptCard.astro";
+import PostgresCard from "./skills/postgresCard.astro";
+import VueCard from "./skills/vueCard.astro";
 ---
 
 <div class="w-full min-h-screen h-full relative">
@@ -22,11 +24,13 @@ import TypescriptCard from "./skills/typescriptCard.astro";
         <TypescriptCard />
         <ReactCard />
         <NextCard />
+        <VueCard/>
       </div>
       <div class="flex lex-grow flex-shrink basis-0 justify-center h-full items-center flex-col md:flex-row gap-8 md:gap-4 p-2 md:p-0">
         <TRPCCard />
         <TailwindCard />
         <MySQLCard />
+        <PostgresCard />
       </div>
     </div>
   </div>

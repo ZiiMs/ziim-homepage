@@ -1,7 +1,41 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
-  }
+    /* Type Checking */
+    "strict": true,                         /* Enable all strict type-checking options. Highly recommended. */
+    "noImplicitAny": true,                  /* Check for expressions and declarations with an implied 'any' type. */
+    "strictNullChecks": true,               /* Enable strict checking of null and undefined. */
+    "strictFunctionTypes": true,            /* Enable strict checking of function types. */
+    "strictPropertyInitialization": true,   /* Ensure non-undefined class properties are initialized in the constructor. */
+    "noImplicitThis": true,                 /* Report 'this' expressions with an implied 'any' type. */
+    "alwaysStrict": true,                   /* Parse in strict mode and emit "use strict" for each source file. */
+    "noUnusedLocals": true,                 /* Report errors on unused local variables. */
+    "noUnusedParameters": true,             /* Report errors on unused parameters. */
+    "noFallthroughCasesInSwitch": true,     /* Report errors for fallthrough cases in switch statement. */
+    "noImplicitReturns": true,              /* Report error when not all code paths in function return a value. */
+
+    /* Modules */
+    "module": "ESNext",                     /* Specify module code generation: 'None', 'CommonJS', 'AMD', 'System', 'UMD', 'ESNext', 'Node16', 'NodeNext'. */
+    "moduleResolution": "Node",             /* Resolve modules using Node.js style (necessary for modern bundlers). */
+    "esModuleInterop": true,                /* Allows you to use 'import * as React from "react"' style imports. */
+    "forceConsistentCasingInFileNames": true, /* Disallow inconsistently-cased references to the same file. */
+
+    /* JavaScript Support */
+    "target": "ES2020",                     /* Specify ECMAScript target version. */
+    "lib": ["dom", "dom.iterable", "esnext"], /* Specify a set of bundled library declaration files to include. */
+    "allowJs": true,                        /* Allow JavaScript files to be compiled. */
+    "skipLibCheck": true,                   /* Skip type checking of all declaration files (*.d.ts). */
+    "resolveJsonModule": true,              /* Allow importing .json files */
+
+    /* JSX */
+    "jsx": "react-jsx",                     /* Specify JSX code generation: 'preserve', 'react-native', 'react', 'react-jsx', 'react-jsxdev'. */
+
+    /* Output */
+    "outDir": "./dist",                     /* Redirect output structure to the directory. */
+    "rootDir": "./src",                     /* Specify the root directory of input files. */
+    "sourceMap": true,                      /* Generates corresponding .map file. */
+    "declaration": true,                    /* Generates corresponding '.d.ts' file. (Useful for libraries) */
+    "declarationDir": "./types"             /* Directory for d.ts files. (Useful for libraries) */
+  },
+  "include": ["src/**/*"],                  /* Specify files to include */
+  "exclude": ["node_modules", "dist"]       /* Specify files to exclude */
 }

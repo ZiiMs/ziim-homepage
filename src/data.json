@@ -22,5 +22,11 @@
     "body": "CUID-generator is a web application that generates unique, cryptographically-secure identifiers (CUIDs) that can be used as unique keys or IDs in a variety of applications. What sets CUID-generator apart is its modern and user-friendly interface, which makes it easy and intuitive to use.",
     "image": "https://i.imgur.com/gqzvuLr.png",
     "url": "https://github.com/ZiiMs/cuid-generator"
+  },
+  {
+    "title": "Fellowroutes",
+    "body": "FellowRoutes is a web application that helps players map out their route through the dungeon in the game Fellowship. It makes it easy to visualize layouts and identify challenging moments. Its modern, intuitive design is what makes route planning genuinely easy.",
+    "image": "https://i.imgur.com/9Ca59kq.png",
+    "url": "https://fellowroutes.app/"
   }
 ]
